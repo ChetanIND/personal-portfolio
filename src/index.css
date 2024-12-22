@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 1.2 rem;
+}
+
+
+.font-robotic {
+  font-family: 'Roboto', sans-serif; /* Change to your desired robotic font */
+}
+
+
+/* Add this to your CSS file */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.border-primary {
+  border-color: #fff; /* Change this to your desired color */
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}

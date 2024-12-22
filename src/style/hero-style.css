@@ -1,0 +1,47 @@
+#loop {
+    display: flex;
+    position: absolute;
+    top: 50%; /* Mid-section of the page */
+    transform: translateY(-50%); /* Center vertically */
+    width: 100%;
+    height: auto;
+    font-size: 6vw;
+    white-space: nowrap;
+    font-family: gilroy, sans-serif;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+#loop > h1 {
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop.light-mode > h1 {
+    color: #000; /* Light mode text color */
+}
+
+#loop.light-mode > h1 > span {
+    -webkit-text-stroke: 1.2px #000; /* Light mode stroke color */
+    color: transparent; /* Keep span color transparent for stroke effect */
+}
+
+#loop.dark-mode > h1 {
+    color: #fff; /* Dark mode text color */
+}
+
+#loop.dark-mode > h1 > span {
+    -webkit-text-stroke: 1.2px #fff; /* Dark mode stroke color */
+    color: transparent; /* Keep span color transparent for stroke effect */
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
