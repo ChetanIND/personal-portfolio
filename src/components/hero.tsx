@@ -26,7 +26,7 @@ export function Hero() {
         </div>
 
         <div className="w-full max-w-screen-lg h-[80vh] md:h-[90vh] lg:h-[100vh] z-10">
-          <Spline scene="https://prod.spline.design/UNQKHO4GWwaMcZkY/scene.splinecode"/>
+          <Spline scene="https://prod.spline.design/UNQKHO4GWwaMcZkY/scene.splinecode" />
         </div>
 
         <div className="absolute inset-x-0 top-12 sm:top-16 md:top-16 lg:top-28 flex flex-col md:flex-row justify-between items-center px-5 md:px-20 z-10">
