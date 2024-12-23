@@ -15,50 +15,30 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: 'International MUN (iMUN)',
-    shortName: 'International MUN',
-    position: 'Campus Ambassador Intern',
-    duration: 'June 2021 - July 2021',
+    company: 'Muks Robotics AI Pvt. Ltd.',
+    shortName: 'Muks Robotics',
+    position: 'AI and ML Intern',
+    duration: 'April 2024 - July 2024',
     description: [
-      'Promoted IMUN Online Conferences in different schools/universities and got 10+ registrations.',
-      'Informed how MUNs enhance - Negotiation, Diplomacy, Leadership, etc.',
-      'Achieved Brand Ambassador title for increasing the sales of the organization by 10% and creating brand presence.',
+      'Led four computer vision detection projects for clients including one of India’s top leading companies in the automobile sector like TATA Motors and Sun Jewels at SEEPZ, utilizing YOLOv8, YOLOv10, and PyTorch to develop robust and accurate vision systems.',
+      'Integrated Modbus Slave protocols and RTSP cameras to enhance real-time data processing capabilities and ensure seamless system efficiency.',
+      'Developed user-friendly interfaces using PyQt5 and contributed to cutting-edge vision transformer projects, significantly improving overall system functionality and performance',
+      'Managed end-to-end project lifecycles from client requirement analysis to final product delivery, consistently ensuring on-time delivery and high levels of client satisfaction'
     ],
-    offerLetter: 'https://github.com/ChetanIND'
+    offerLetter: 'https://drive.google.com/file/d/1oVTAjzO63UCMwFB5vWqeeiks2mq7yJfU/view?usp=sharing'
   },
   {
-    company: 'Suven C&T',
-    shortName: 'Suven C&T',
-    position: 'Research Intern',
-    duration: 'May 2021 - June 2021',
+    company: 'OWASP PCCOE STUDENT CHAPTER',
+    shortName: 'OWASP STUDENT CHAPTER',
+    position: 'Security Team Member',
+    duration: 'August 2023 - April 2024',
     description: [
-      'Worked on data science and machine learning projects',
-      'Developed predictive models using Python and scikit-learn',
-      'Collaborated with team members on research papers'
+      'Active member of OWASP PCCOE Student Chapter’s Security Team, organizing cybersecurity events and workshops.',
+      'Develop engaging Capture The Flag (CTF) challenges to promote cybersecurity awareness among students.',
+      'Deliver sessions and seminars, educating peers on cybersecurity best practices and emerging trends.',
+      'Foster a collaborative environment, supporting peers, and networking within the cybersecurity industry.'
     ]
   },
-  {
-    company: 'DSV - SVVV',
-    shortName: 'DSV - SVVV',
-    position: 'Teaching Assistant',
-    duration: 'Jan 2021 - April 2021',
-    description: [
-      'Assisted professors in conducting online classes',
-      'Created study materials and assignments',
-      'Mentored junior students in programming concepts'
-    ]
-  },
-  {
-    company: 'Forage',
-    shortName: 'Forage',
-    position: 'Virtual Experience Participant',
-    duration: 'Dec 2020 - Jan 2021',
-    description: [
-      'Completed virtual internships in data analytics',
-      'Worked on real-world business problems',
-      'Developed solutions using industry standard tools'
-    ]
-  }
 ]
 
 export function Experience() {
@@ -129,7 +109,7 @@ export function Experience() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-6 text-sm text-emerald-500 hover:text-emerald-400 transition-colors"
                 >
-                  View OFFER LETTER
+                  View COMPLETION LETTER
                   <ExternalLink size={16} />
                 </a>
               )}

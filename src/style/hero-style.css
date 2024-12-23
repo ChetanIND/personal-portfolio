@@ -45,3 +45,17 @@
         transform: translateX(-100%);
     }
 }
+
+/* Add this to your hero-style.css */
+.spline-container {
+    overflow: clip; /* Hide overflow */
+    transform: scale(1.30); /* Zoom in the Spline */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+
+/* Add this to your hero-style.css */
+.hero-container {
+    height: 100vh; /* Set the height to 100vh */
+    overflow: hidden; /* Hide any overflow content */
+  } 

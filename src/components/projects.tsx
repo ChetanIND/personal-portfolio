@@ -14,20 +14,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Voter Registration WebApp',
-    description: 'A web application for voter registration and management',
-    context: 'Project 4 under HTML-CSS Suven Coding Internship',
-    technologies: ['HTML', 'CSS'],
-    github: 'https://github.com/ChetanIND',
-    external: 'https://github.com/ChetanIND'
+    title: 'BillWise - Expense Tracker App',
+    description: ' A application based Automated expense categorization and predictive analysis, optimizing user experience and financial insights.',
+    context: 'Project 1 under Hackathon',
+    technologies: ['Flutter', 'Firebase', 'Dart', 'Python'],
+    github: 'https://github.com/ChetanIND/justInCase',
+    external: 'https://github.com/ChetanIND/justInCase'
   },
   {
-    title: 'CSS Animation WebApp',
-    description: 'Interactive web application showcasing CSS animations',
-    context: 'Project 3 under HTML-CSS Suven Coding Internship',
-    technologies: ['HTML', 'CSS'],
-    github: 'https://github.com/ChetanIND',
-    external: 'https://github.com/ChetanIND'
+    title: 'SAHARA: An Automated Smart Device for Visually Impaired',
+    description: 'SAHARA integrates advanced technology into a compact, user-friendly device with features like obstacle detection, visual message-to-speech conversion, and precise currency identification and counting. By leveraging cutting-edge sensors and AI algorithms, SAHARA aims to enhance safety, accessibility, and financial independence, ultimately fostering a more inclusive and empowered society.',
+    context: 'Project 2 Third Year Engineering Mini Project',
+    technologies: ['Python', 'C++', 'C','Machine Learning'],
+    github: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation',
+    external: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation'
   }
 ]
 
