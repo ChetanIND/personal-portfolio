@@ -97,38 +97,29 @@ export function Navigation() {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          className="md:hidden fixed inset-0 bg-white/95 dark:bg-black/95 z-50 flex items-center justify-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="md:hidden fixed top-20 inset-x-0 bg-gray-100 dark:bg-gray-800 z-50 flex flex-col items-center p-6 space-y-4 text-center"
         >
-          <div className="px-6 py-8 space-y-6 text-center w-full">
-            {menuItems.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block py-3 text-lg font-medium transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                <span className="text-gray-900 dark:text-white font-mono block text-sm mb-1">{item.number}</span>
-                {item.name}
-              </motion.a>
-            ))}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="pt-6"
+          {menuItems.map((item) => (
+            <motion.a
+              key={item.name}
+              href={item.href}
+              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg font-medium transition-colors"
+              onClick={() => handleScroll(item.href)}
             >
-              <button className="border border-gray-900 dark:border-white text-gray-900 dark:text-white px-8 py-3 rounded hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors w-48">
-                Resume
-              </button>
-            </motion.div>
-          </div>
+              {item.name}
+            </motion.a>
+          ))}
+          <motion.button
+            onClick={() => window.open('https://drive.google.com/file/d/17-dAVXWmKaR40GmyhBhUKtBoeS2sNPAE/view?usp=sharing', '_blank')}
+            className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-lg font-medium transition-colors"
+          >
+            Resume
+          </motion.button>
         </motion.div>
       )}
     </nav>
   )
 }
-
