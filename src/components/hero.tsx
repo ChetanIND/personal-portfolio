@@ -25,7 +25,7 @@ export function Hero() {
           </h1>
         </div>
 
-        <div className="w-full max-w-screen-lg h-[80vh] md:h-[90vh] lg:h-[120vh] overflow-clip z-10">
+        <div className="w-full max-w-screen-lg h-[80vh] md:h-[90vh] lg:h-[90vh] overflow-clip z-10">
           <Spline scene="https://prod.spline.design/UNQKHO4GWwaMcZkY/scene.splinecode" />
         </div>
 
