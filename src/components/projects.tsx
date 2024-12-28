@@ -1,7 +1,7 @@
 'use client'
-
 import { motion } from 'framer-motion'
 import { Folder, Github, ExternalLink } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 interface Project {
   title: string
@@ -31,14 +31,14 @@ const projects: Project[] = [
   }
 ]
 
-export function Projects() {
+export function Projects({projectsLink}: {projectsLink: string}) {
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 max-w-6xl mx-auto px-4 sm:px-8 md:px-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.15 }}
       >
         <div className="flex items-center gap-4 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center gap-2 text-gray-900 dark:text-white">
@@ -62,14 +62,12 @@ export function Projects() {
                 Below are some of my featured projects. These represent my best work and demonstrate my ability to solve real-world problems through code. Want to see more? Check out my GitHub profile for a complete collection of my work.
               </p>
             </div>
-            <a 
-              href="https://github.com/ChetanIND"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              to={projectsLink}
               className="inline-block border-2 border-gray-900 dark:border-white px-6 py-3 rounded text-gray-900 dark:text-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
             >
               Learn More
-            </a>
+            </Link>
           </div>
 
           {/* Right Side - Project Cards */}

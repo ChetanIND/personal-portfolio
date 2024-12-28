@@ -68,7 +68,7 @@ export function Expertise() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.15 }}
       >
         <div className="flex items-center gap-4 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center gap-2 text-gray-900 dark:text-white">
@@ -97,7 +97,7 @@ function ExpertiseIcon({ item }: { item: ExpertiseItem }) {
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.15 }}
     >
       <div
         className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mb-2"

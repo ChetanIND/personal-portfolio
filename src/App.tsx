@@ -1,19 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from './contexts/theme-context'
 import { Navigation } from './components/navigation'
 import { SocialSidebar } from './components/social-sidebar'
 import { EmailSidebar } from './components/email-sidebar'
-import { Hero } from './components/hero'
-import { About } from './components/about'
 import { LoadingScreen } from './components/loading-screen'
-import { Expertise } from './components/expertise'
-import { Experience } from './components/experience'
-import { Projects } from './components/projects'
-import { Contact } from './components/contact'
 import { Footer } from './components/footer'
-
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -22,12 +18,13 @@ export default function App() {
     // Simulate content loading
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2500) // Adjust this value to match or exceed the duration in LoadingScreen
+    }, 5000) // Adjust this value to match or exceed the duration in LoadingScreen
 
     return () => clearTimeout(timer)
   }, [])
 
   return (
+    <Router>
     <ThemeProvider>
       <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300">
         <Navigation />
@@ -35,18 +32,15 @@ export default function App() {
         <div className="relative">
           <SocialSidebar />
           <EmailSidebar />
-          <main className="container mx-auto">
-            <Hero />
-            <About />
-            <Expertise />
-            <Experience />
-            <Projects />
-            <Contact />
-          </main>
+          <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
         </div>
         <Footer />
       </div>
     </ThemeProvider>
+    </Router>
   )
 }
 

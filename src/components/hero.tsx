@@ -19,14 +19,14 @@ export function Hero() {
             <b> Web</b> Developer <span>AI</span> Developer <span>Full Stack</span> Developer <span>Machine Learning</span> Engineer 
           </h1>
           <h1>
-            <b> Web</b> Developer <span>AI</span> Developer <span>Full Stack</span> Developer <span>Machine Learning</span> Engineer 
+            <b> Web</b> Developer <span>AI</span> Developer <span>Full Sta  ck</span> Developer <span>Machine Learning</span> Engineer 
           </h1>
           <h1>
             <b> Web</b> Developer <span>AI</span> Developer <span>Full Stack</span> Developer <span>Machine Learning</span> Engineer 
           </h1>
         </div>
 
-        <div className="spline-container w-full max-w-screen-lg h-[80vh] md:h-[90vh] lg:h-[100vh] z-10">
+        <div className="spline-container w-full max-w-screen-lg h-[90vh] md:h-[90vh] lg:h-[100vh] z-10">
           <Spline scene="https://prod.spline.design/UNQKHO4GWwaMcZkY/scene.splinecode"/>
         </div>
 
