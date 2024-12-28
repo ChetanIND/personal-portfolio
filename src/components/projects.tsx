@@ -19,7 +19,7 @@ const projects: Project[] = [
     context: 'Project 1 under Hackathon',
     technologies: ['Flutter', 'Firebase', 'Dart', 'Python'],
     github: 'https://github.com/ChetanIND/justInCase',
-    external: 'https://github.com/ChetanIND/justInCase'
+    external: 'https://drive.google.com/file/d/1SEHRzfbnCDw7OHZNLeD9Jm70hXmsiCDi/view?usp=sharing'
   },
   {
     title: 'SAHARA: An Automated Smart Device for Visually Impaired',
@@ -27,7 +27,7 @@ const projects: Project[] = [
     context: 'Project 2 Third Year Engineering Mini Project',
     technologies: ['Python', 'C++', 'C','Machine Learning'],
     github: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation',
-    external: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation'
+    external: 'https://drive.google.com/file/d/1LI1eRyfbwHuqaRJ14cNUogBoiVBJWDUg/view?usp=sharing'
   }
 ]
 
@@ -66,7 +66,7 @@ export function Projects({projectsLink}: {projectsLink: string}) {
               to={projectsLink}
               className="inline-block border-2 border-gray-900 dark:border-white px-6 py-3 rounded text-gray-900 dark:text-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
             >
-              Learn More
+              View More Projects
             </Link>
           </div>
 

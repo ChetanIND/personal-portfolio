@@ -3,26 +3,52 @@ import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import pic1 from '../assets/p1.png';
+import pic2 from '../assets/p2.jpg';
+import pic3 from '../assets/p3.jpg';
+import pic4 from '../assets/p4.png';
 
 const projects = [
   {
-    title: 'Voter Registration WebApp',
-    description: 'A comprehensive web application for voter registration and management. This project streamlines the voter registration process, making it more accessible and efficient for users.',
-    context: 'Project 4 under HTML-CSS Suven Coding Internship',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB'],
-    github: '#',
-    external: '#',
-    image: '/placeholder.svg?text=Voter+Registration+WebApp'
+    
+    title: 'Zebra-Crossing Person Detection and Operating Traffic Signal',
+    description: 'Developed an intelligent system for pedestrian safety at zebra crossings. This system integrates real-time pedestrian detection using optimized YOLOv8 models with Arduino-controlled traffic signals and audio alerts to enhance road safety.',
+    context: 'Project 1 During Internship',
+    technologies: ['Python', 'Arduino', 'Machine Learning', 'OpenCV', 'YOLOv8'],
+    github: 'https://github.com/ChetanIND/zebra-crossing-person-detection-and-operating-Traffic-Signal',
+    external: 'https://drive.google.com/file/d/1Xznft5WLPIkclWYFkzZNoBNDTotuFQcz/view?usp=sharing',
+    image: pic3
   },
   {
-    title: 'CSS Animation WebApp',
-    description: 'An interactive web application showcasing various CSS animations. This project demonstrates advanced CSS techniques and provides a playground for exploring different animation effects.',
-    context: 'Project 3 under HTML-CSS Suven Coding Internship',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-    github: '#',
-    external: '#',
-    image: '/placeholder.svg?text=CSS+Animation+WebApp'
+    title: 'SAHARA: An Automated Smart Device for Visually Impaired',
+    description: 'SAHARA integrates advanced technology into a compact, user-friendly device with features like obstacle detection, visual message-to-speech conversion, and precise currency identification and counting. By leveraging cutting-edge sensors and AI algorithms, SAHARA aims to enhance safety, accessibility, and financial independence, ultimately fostering a more inclusive and empowered society.',
+    context: 'Project 2 Third Year Engineering Mini Project',
+    technologies: ['Python', 'C++', 'C','Machine Learning'],
+    github: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation',
+    external: '',
+    image: pic1
   },
+  {
+
+    title: 'BillWise: Expense Tracker App',
+    description: ' A application based Automated expense categorization and predictive analysis, optimizing user experience and financial insights. Developed a financial management system with automated expense categorization, predictive analysis, and a chatbot. Optimized backend performance using Django/FastAPI and integrated machine learning models for enhanced user experience.',
+    context: 'Project 3 under Hackathon',
+    technologies: ['Flutter', 'Firebase', 'Dart', 'Python'],
+    github: 'https://github.com/ChetanIND/justInCase',
+    external: 'https://drive.google.com/file/d/1SEHRzfbnCDw7OHZNLeD9Jm70hXmsiCDi/view?usp=sharing',
+    image: pic2
+  },
+  {
+
+    title: 'Data Visualization & EDA App with Google Generative AI',
+    description: ' This Streamlit app empowers data exploration. Upload a CSV file to preview, visualize, and conduct EDA. The app leverages ydata-profiling and Google Generative AI for insightful data analysis and preprocessing suggestions.',
+    context: 'Project 4 personal project',
+    technologies: ['Python', 'Streamlit', 'Google Generative AI', 'ydata-profiling','Gemini','Pandas'],
+    github: 'https://github.com/ChetanIND/Data-Visualization-EDA-App-with-Google-Generative-AI',
+    external: 'https://data-visualization-eda-app-with-app-generative-ai-cih.streamlit.app',
+    image: pic4
+  },
+
   // Add more projects here
 ];
 
@@ -54,7 +80,7 @@ const ProjectsPage: React.FC = () => {
             >
               <div className="md:flex">
                 <div className="md:flex-shrink-0">
-                  <img className="h-48 w-full object-cover md:w-48" src={project.image} alt={project.title} />
+                  <img className="h-48 w-full object-cover md:h-64 md:w-96" src={project.image} alt={project.title} />
                 </div>
                 <div className="p-8">
                   <div className="flex justify-between items-start mb-4">

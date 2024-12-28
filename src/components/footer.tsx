@@ -16,11 +16,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">About</a></li>
-              <li><a href="#expertise" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Expertise</a></li>
-              <li><a href="#experience" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Experience</a></li>
-              <li><a href="#projects" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Projects</a></li>
-              <li><a href="#contact" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Contact</a></li>
+              <li><a href="/#about" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">About</a></li>
+              <li><a href="/#expertise" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Expertise</a></li>
+              <li><a href="/#experience" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Experience</a></li>
+              <li><a href="/#projects" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Projects</a></li>
+              <li><a href="/#contact" className="text-gray-600 dark:text-gray-400 hover:text-emerald-500 dark:hover:text-emerald-400">Contact</a></li>
             </ul>
           </div>
           <div>
