@@ -25,7 +25,7 @@ const projects = [
     context: 'Project 2 Third Year Engineering Mini Project',
     technologies: ['Python', 'C++', 'C','Machine Learning'],
     github: 'https://github.com/ChetanIND/obstacle-detection-and-avoidance-using-depth-estimation',
-    external: '',
+    external: 'https://drive.google.com/file/d/1LI1eRyfbwHuqaRJ14cNUogBoiVBJWDUg/view?usp=sharing',
     image: pic1
   },
   {

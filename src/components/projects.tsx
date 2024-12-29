@@ -43,7 +43,7 @@ export function Projects({projectsLink}: {projectsLink: string}) {
         <div className="flex items-center gap-4 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center gap-2 text-gray-900 dark:text-white">
             <span className="font-mono text-gray-600 dark:text-gray-400">04.</span>
-            Some Things I've Built
+            Projects
           </h2>
           <div className="h-px bg-gray-400 dark:bg-gray-600 flex-grow"></div>
         </div>
@@ -53,14 +53,10 @@ export function Projects({projectsLink}: {projectsLink: string}) {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-gray-600 dark:text-gray-300">
-                I love building things for the web. Throughout my journey as a developer, I've created numerous projects that showcase my growth and expertise in different technologies.
+              I love building innovative solutions that push the boundaries of technology. Throughout my journey as a developer, I've created numerous projects that showcase my growth and expertise across diverse fields like AI, machine learning, computer vision, web development, and app development.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                From simple static websites to complex web applications, each project has been a stepping stone in my learning process. I focus on writing clean, efficient code while ensuring great user experience.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Below are some of my featured projects. These represent my best work and demonstrate my ability to solve real-world problems through code. Want to see more? Check out my GitHub profile for a complete collection of my work.
-              </p>
+              From developing simple static websites to deploying AI-driven models and crafting full-fledged applications, each project has been a stepping stone in my learning process. I strive to write clean, efficient code while ensuring high performance, scalability, and a seamless user experience.              </p>
             </div>
             <Link 
               to={projectsLink}

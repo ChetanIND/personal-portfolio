@@ -55,7 +55,7 @@ export function Experience() {
         <div className="flex items-center gap-4 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center gap-2 text-gray-900 dark:text-white">
             <span className="font-mono text-gray-600 dark:text-gray-400">03.</span>
-            Where I've Worked
+            Experience
           </h2>
           <div className="h-px bg-gray-400 dark:bg-gray-600 flex-grow"></div>
         </div>

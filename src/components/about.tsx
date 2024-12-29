@@ -5,10 +5,11 @@ import Image from '../assets/profile.svg'
 
 export function About() {
   const activities = [
-    ['Coding', 'Reading'],
-    ['Painting', 'Poetry'],
-    ['Problem Solving', 'Team Management'],
-    ['Playing Video Games', 'Playing Guitar'],
+    ['Coding'],
+    ['Team Management'],
+    ['Problem Solving'],
+    ['Playing Guitar'],
+    ['Painting'],
   ]
 
   return (
@@ -30,7 +31,7 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           <div className="md:col-span-2 space-y-4 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
             <p>
-              Hello! I'm Chetan Harshad Indulkar, from Pune City, also known as a beautiful city with rich culture and heritage.
+              Hello! I'm Chetan Harshad Indulkar, from Pune City.
             </p>
 
             <p>
@@ -46,11 +47,11 @@ export function About() {
             </p>
 
             <p>
-              I am a member of{' '}
+              I was a member of{' '}
               <a href="https://www.linkedin.com/in/pccoe-owasp/?originalSubdomain=in" className="text-gray-900 dark:text-white hover:underline">
                 OWASP PCCOE Student Chapter
               </a>{' '}
-              appointed as CTF Squal Member..
+              appointed as Secuirty Team Member.
             </p>
 
             <p className="mb-4">Here are a few of the other activities that I love to do!</p>

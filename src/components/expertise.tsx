@@ -6,7 +6,6 @@ import ReactIcon from '../assets/frameworks/react.svg'
 import NodeIcon from '../assets/frameworks/nodejs.svg'
 import DjangoIcon from '../assets/frameworks/django.svg'
 import OracleIcon from '../assets/databases/oracle.svg'
-import CIcon from '../assets/programming languages/c.svg'
 import CPPIcon from '../assets/programming languages/c++.svg'
 import JavaIcon from '../assets/programming languages/java.svg'
 import PythonIcon from '../assets/programming languages/python.svg'
@@ -17,14 +16,12 @@ import FirebaseIcon from '../assets/cloud/firebase.svg'
 import GCPIcone from '../assets/google-cloud.svg'
 import DockerIcon from '../assets/cloud/docker.svg'
 import GithubIconb from '../assets/cloud/github.svg'
-import GitlabIcon from '../assets/cloud/gitlab.svg'
 import TensorflowIcone from '../assets/google-tensorflow-icon.svg'
 import HuggingfaceIcon from '../assets/huggingface-2.svg'
 import FlaskIcon from '../assets/flask2.svg'
 import AndroidIcon from '../assets/frameworks/android.svg'
 import PytorchIcon from '../assets/PyTorch.svg'
 import LinuxIcon from '../assets/Linux.svg'
-import FigmaIcon from '../assets/Figma.svg'
 import LangchainIcon from '../assets/langchain.svg'
 
 // Define the structure for our expertise items
@@ -35,7 +32,6 @@ interface ExpertiseItem {
 
 // Our list of expertise items
 const expertiseItems: ExpertiseItem[] = [
-  { name: 'C', icon: CIcon },
   { name: 'C++', icon: CPPIcon },
   { name: 'Python', icon: PythonIcon },
   { name: 'Java', icon: JavaIcon },
@@ -47,18 +43,16 @@ const expertiseItems: ExpertiseItem[] = [
   { name: 'Android', icon: AndroidIcon },
   { name: 'Oracle', icon: OracleIcon },
   { name: 'MySQL', icon: MysqlIcon },
+  { name: 'MongoDB', icon: MongoDBIcon },
   { name: 'Firebase', icon: FirebaseIcon },
   { name: 'GitHub', icon: GithubIconb },
-  { name: 'GitLab', icon: GitlabIcon },
-  { name: 'Docker', icon: DockerIcon },
   { name: 'Google Cloud Platform', icon: GCPIcone },
-  { name: 'MongoDB', icon: MongoDBIcon },
   { name: 'Tensorflow', icon: TensorflowIcone },
   { name: 'PyTorch', icon: PytorchIcon },
   { name: 'Huggingface', icon: HuggingfaceIcon },
   { name: 'Langchain', icon: LangchainIcon },
   { name: 'Linux', icon: LinuxIcon },
-  { name: 'Figma', icon: FigmaIcon },
+  { name: 'Docker', icon: DockerIcon },
 ]
 
 export function Expertise() {
